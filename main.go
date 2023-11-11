@@ -21,6 +21,8 @@ func main() {
 	router := gin.Default()
     router.GET("/", handlers.Home)
 	router.GET("/api/v1/categories", handlers.GetCategories)
+	router.POST("/api/v1/create/roadmap", handlers.CreateRoadmap)
+    router.POST("/api/v1/ask", handlers.AskGPT)
 
 	err := router.Run()
 	if err != nil {

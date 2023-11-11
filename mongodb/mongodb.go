@@ -63,3 +63,41 @@ func DBRead() ([]Category, error) {
     err = json.Unmarshal(jsonResult, &categories)
     return categories, nil
 }
+
+func AddUserRoadmap(roadmap Roadmap) error {
+	// Set up MongoDB connection options
+    DB_URI := os.Getenv("DB_URI")
+	clientOptions := options.Client().ApplyURI(DB_URI)
+
+	// Connect to MongoDB
+	client, err := mongo.Connect(context.Background(), clientOptions)
+	if err != nil {
+		log.Println(err)
+        return err
+	}
+	defer client.Disconnect(context.Background())
+
+	// Ping the MongoDB server to check if the connection is successful
+	err = client.Ping(context.Background(), nil)
+	if err != nil {
+        log.Println(err)
+        return err
+	}
+	log.Println("Connected to MongoDB!")
+
+	// Specify the database and collection
+	database := client.Database("api-db")
+	collection := database.Collection("user_categories")
+
+	// Define a filter (optional) to query specific documents
+
+	// Set up a context with a timeout
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+
+    _, err = collection.InsertOne(ctx, roadmap)
+    if err != nil {
+        return err;
+    }
+    return nil
+}

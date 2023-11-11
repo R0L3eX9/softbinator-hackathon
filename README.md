@@ -1,9 +1,9 @@
-# TODO
-- [ ] Endpoints
-    - [ ] /api/roadmaps:id (GET)
-    - [ ] /api/roadmaps (GET)
-    - [ ] /api/v1 (POST)
+# API for Softbinator Hackathon
 
-- [ ] Integrate with Mongodb
-    - [ ] Install Atlas
-    - [ ] Install Go mongodb package
+### Endpoints
+- "/home"
+- "/api/v1/categories"
+
+### Requirements
+- MongoDB
+- Go Gin
