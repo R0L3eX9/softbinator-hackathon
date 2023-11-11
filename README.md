@@ -1,8 +1,8 @@
 # TODO
 - [ ] Endpoints
-    - [ ] /api/skills (GET)
-    - [ ] /api/skill:id (GET)
-    - [ ] /api/roadmap (POST)
+    - [ ] /api/roadmaps:id (GET)
+    - [ ] /api/roadmaps (GET)
+    - [ ] /api/v1 (POST)
 
 - [ ] Integrate with Mongodb
     - [ ] Install Atlas
