@@ -2,10 +2,9 @@ package main
 
 import (
 	"log"
-	"os"
 
-    "github.com/gin-gonic/gin"
 	"github.com/R0L3eX9/softbinator-hackathon/handlers"
+	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
 
@@ -18,18 +17,14 @@ func env_init() {
 
 func main() {
 	env_init()
-	API_KEY := os.Getenv("GPT_API_KEY")
-	PORT := os.Getenv("PORT")
 
-    router := gin.Default()
-    router.GET("/api/v1/categories", handlers.GetCategories)
-    // router.POST("/api/create/category")
-    // router.POST("/api/create/roadmap")
+	router := gin.Default()
+    router.GET("/", handlers.Home)
+	router.GET("/api/v1/categories", handlers.GetCategories)
 
-    err := router.Run("")
-    if err != nil {
-        log.Fatal("ERROR: can not run the server because {err}")
-        return
-    }
-    log.Println("Server running at: https://localhost:{PORT}")
+	err := router.Run()
+	if err != nil {
+		log.Fatal("ERROR: can not run the server")
+		return
+	}
 }

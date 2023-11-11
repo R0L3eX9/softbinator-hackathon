@@ -1,24 +1,113 @@
 [
-  "Coding": {
-    "categoryName": "Coding",
-    "roadmaps": [
+  {
+    "categoryName": "Software Development",
+    "categoryRoadmaps": [
       {
-        "title": "Python",
-        "difficulties": [
+        "roadmapName": "Object Oriented Programming (OOP)",
+        "roadmapDifficulties": [
           {
             "difficultyLevel": "EASY",
-            "skills": [
+            "difficultySkills": [
               {
-                "title": "Basic syntax",
-                "description": "Learn basic stuff about python",
-                "state": false,
-                "resources": [
+                "skillTitle": "Understanding OOP Concepts",
+                "skillDescription": "Grasp the basics of OOP: classes, objects, inheritance, and encapsulation.",
+                "skillStatus": false,
+                "skillResources": [
                   {
-                    "resourceName": "Python book for noobs",
-                    "description": "Book that goes through basic syntax in Python"
+                    "resourceName": "Head First Object-Oriented Analysis and Design",
+                    "resourceDescription": "Book introducing OOP concepts in an engaging manner"
+                  },
+                  {
+                    "resourceName": "Object-Oriented Programming in 7 minutes | Mosh",
+                    "resourceDescription": "YouTube video providing a quick overview of OOP"
                   }
                 ]
-              }  
+              },
+              {
+                "skillTitle": "Implementing Basic Classes and Objects",
+                "skillDescription": "Learn to create and use basic classes and objects in a programming language.",
+                "skillStatus": false,
+                "skillResources": [
+                  {
+                    "resourceName": "GeeksforGeeks: Classes and Objects in Java",
+                    "resourceDescription": "Article detailing how to implement classes and objects in Java"
+                  },
+                  {
+                    "resourceName": "Object-oriented Programming in Python | Codecademy",
+                    "resourceDescription": "Interactive course on implementing OOP in Python"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "difficultyLevel": "MEDIUM",
+            "difficultySkills": [
+              {
+                "skillTitle": "Inheritance and Polymorphism",
+                "skillDescription": "Understand and apply inheritance and polymorphism in OOP.",
+                "skillStatus": false,
+                "skillResources": [
+                  {
+                    "resourceName": "Java Programming Masterclass for Software Developers | Udemy",
+                    "resourceDescription": "Course covering OOP concepts like inheritance and polymorphism in Java"
+                  },
+                  {
+                    "resourceName": "Effective Java by Joshua Bloch",
+                    "resourceDescription": "Book with best practices in Java, including inheritance"
+                  }
+                ]
+              },
+              {
+                "skillTitle": "Design Patterns",
+                "skillDescription": "Learn about common OOP design patterns like Singleton, Factory, and Observer.",
+                "skillStatus": false,
+                "skillResources": [
+                  {
+                    "resourceName": "Head First Design Patterns",
+                    "resourceDescription": "Book that introduces design patterns in a reader-friendly way"
+                  },
+                  {
+                    "resourceName": "Design Patterns on refactoring.guru",
+                    "resourceDescription": "Website with comprehensive information on design patterns"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "difficultyLevel": "HARD",
+            "difficultySkills": [
+              {
+                "skillTitle": "Advanced OOP Concepts",
+                "skillDescription": "Dive into advanced topics like composition over inheritance and SOLID principles.",
+                "skillStatus": false,
+                "skillResources": [
+                  {
+                    "resourceName": "Clean Architecture by Robert C. Martin",
+                    "resourceDescription": "Book discussing advanced OOP topics and clean architecture"
+                  },
+                  {
+                    "resourceName": "SOLID Principles: Introducing Software Architecture & Design | Pluralsight",
+                    "resourceDescription": "Online course explaining SOLID principles in depth"
+                  }
+                ]
+              },
+              {
+                "skillTitle": "Real-world OOP Application",
+                "skillDescription": "Apply OOP concepts in building complex, real-world applications.",
+                "skillStatus": false,
+                "skillResources": [
+                  {
+                    "resourceName": "Building Software Systems At Google and Lessons Learned by Titus Winters",
+                    "resourceDescription": "Talk on YouTube discussing OOP in large-scale systems at Google"
+                  },
+                  {
+                    "resourceName": "Refactoring: Improving the Design of Existing Code by Martin Fowler",
+                    "resourceDescription": "Book focused on refactoring code with a focus on OOP"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -26,3 +115,4 @@
     ]
   }
 ]
+
