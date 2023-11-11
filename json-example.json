@@ -1,0 +1,28 @@
+[
+  "Coding": {
+    "categoryName": "Coding",
+    "roadmaps": [
+      {
+        "title": "Python",
+        "difficulties": [
+          {
+            "difficultyLevel": "EASY",
+            "skills": [
+              {
+                "title": "Basic syntax",
+                "description": "Learn basic stuff about python",
+                "state": false,
+                "resources": [
+                  {
+                    "resourceName": "Python book for noobs",
+                    "description": "Book that goes through basic syntax in Python"
+                  }
+                ]
+              }  
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

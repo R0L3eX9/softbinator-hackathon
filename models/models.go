@@ -2,7 +2,7 @@ package models
 
 type Category struct {
     Name string `json:"categoryName"`
-    Roadmap Roadmap `json:"roadmapName"`
+    Roadmaps []Roadmap `json:"roadmaps"`
 }
 type Roadmap struct {
     Title string `json:"title"`
